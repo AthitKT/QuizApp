@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-
+ 
 class AnswerButton extends StatelessWidget {
   final String answerText;
   final void Function() onPressed;
-
+ 
   const AnswerButton(this.answerText, {required this.onPressed, super.key});
-
+ 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0), // เพิ่มระยะห่างแนวตั้ง
       child: SizedBox(
-        width: 600,
+        width: double.infinity,
         child: ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
